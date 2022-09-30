@@ -13,8 +13,9 @@ import {
 } from "@mui/material";
 
 
-const Post = () => {
+const Post = (props) => {
     const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+    const {username, image, content} = props.data;
   return (
     <div>
       <Card sx={{margin: 5}}>
@@ -29,20 +30,18 @@ const Post = () => {
               <MoreVert />
             </IconButton>
           }
-          title="Santosh phaiju"
+          title={username}
           subheader="September 14, 2022"
         />
         <CardMedia
           component="img"
           height="20%"
-          image="https://www.brainyquote.com/photos_tr/en/r/ronhall/898977/ronhall1.jpg"
+          image={image}
           alt="Paella dish"
         />
         <CardContent>
           <Typography variant="body2" color="text.secondary">
-            This impressive paella is a perfect party dish and a fun meal to
-            cook together with your guests. Add 1 cup of frozen peas along with
-            the mussels, if you like.
+            {content}
           </Typography>
         </CardContent>
         <CardActions disableSpacing>
