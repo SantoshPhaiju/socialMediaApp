@@ -64,7 +64,7 @@ const Navbar = () => {
           </Badge>
           <Avatar
           onClick={e => setOpen(true)}
-            src="https://www.iconspng.com/images/male-avatar/male-avatar.jpg"
+            src="https://www.w3schools.com/howto/img_avatar.png"
             sx={{
               width: 30,
               height: 30,
@@ -75,7 +75,7 @@ const Navbar = () => {
         <UserBox>
           <Avatar
           onClick={e => setOpen(true)}
-            src="https://www.iconspng.com/images/male-avatar/male-avatar.jpg"
+            src="https://www.w3schools.com/howto/img_avatar.png"
             sx={{
               width: 30,
               height: 30,
@@ -95,7 +95,7 @@ const Navbar = () => {
         }}
         transformOrigin={{
           vertical: "top",
-          horizontal: "left",
+          horizontal: "right",
         }}
       >
         <MenuItem>Profile</MenuItem>
